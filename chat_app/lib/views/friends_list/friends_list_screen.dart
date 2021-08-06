@@ -11,7 +11,9 @@ class _FriendListScreenState extends State<FriendListScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(actions: [],),
+      appBar: AppBar(
+        actions: [],
+      ),
     );
   }
 }
