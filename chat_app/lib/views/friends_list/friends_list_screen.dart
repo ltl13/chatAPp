@@ -1,3 +1,4 @@
+import 'package:chat_app/constants.dart';
 import 'package:flutter/material.dart';
 
 class FriendListScreen extends StatefulWidget {
@@ -11,9 +12,21 @@ class _FriendListScreenState extends State<FriendListScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        actions: [],
-      ),
+      appBar: friendListAppBar(),
     );
   }
+
+  AppBar friendListAppBar() => AppBar(
+        actions: [],
+        centerTitle: true,
+        elevation: 0,
+        title: Text(
+          'Message',
+          style: Theme.of(context).textTheme.headline6.copyWith(
+                color: myBlackColor,
+                fontSize: 20,
+                fontWeight: FontWeight.w500,
+              ),
+        ),
+      );
 }
