@@ -1,5 +1,6 @@
 import 'package:chat_app/constants.dart';
 import 'package:flutter/material.dart';
+import 'search_box.dart';
 
 class Body extends StatelessWidget {
   const Body({Key key}) : super(key: key);
@@ -9,19 +10,7 @@ class Body extends StatelessWidget {
     return Container(
       child: Column(
         children: [
-          Container(
-            margin: EdgeInsets.all(myDefaultPadding),
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(10),
-              color: textBoxColor,
-            ),
-            child: TextField(
-              decoration: InputDecoration(
-                enabledBorder: InputBorder.none,
-                focusedBorder: InputBorder.none,
-              ),
-            ),
-          )
+          SearchBox(),
         ],
       ),
     );

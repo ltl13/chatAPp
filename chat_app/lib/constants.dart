@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 // Màu chủ đạo
-const textBoxColor = Color(0xfff6f6f6);
+const textBoxColor = Color(0xfff0f0f0);
 const myWhiteColor = Color(0xffffffff);
 const myPurpleColor = Color(0xff5b50dc);
 const myBlackColor = Color(0xff222540);
