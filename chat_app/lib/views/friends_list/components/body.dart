@@ -1,3 +1,4 @@
+import 'package:chat_app/constants.dart';
 import 'package:flutter/material.dart';
 
 class Body extends StatelessWidget {
@@ -5,6 +6,24 @@ class Body extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(
+      child: Column(
+        children: [
+          Container(
+            margin: EdgeInsets.all(myDefaultPadding),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(10),
+              color: textBoxColor,
+            ),
+            child: TextField(
+              decoration: InputDecoration(
+                enabledBorder: InputBorder.none,
+                focusedBorder: InputBorder.none,
+              ),
+            ),
+          )
+        ],
+      ),
+    );
   }
 }
